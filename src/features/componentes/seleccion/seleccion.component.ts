@@ -19,6 +19,13 @@ export class SeleccionComponent implements OnInit {
   public textoBusqueda: string = "";
   public selecciones: Seleccion[] = [];
 
+  public columnas = [
+    {
+      name: "Nombre", prop: "nombre"},
+      {name: "Entidad", prop: "entidad"
+    }
+  ];
+
   constructor(private seleccionServicio: SeleccionService) { }
   ngOnInit(): void {
    this.listar();

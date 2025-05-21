@@ -11,3 +11,6 @@ Selecciones del mundo
 </mat-form-field>
 <button mat-stroked-button color="primary" (click)="buscar()">Buscar</button>
 </div>
+<div>
+    <ngx-datatable [rows]="selecciones" [columns]="columnas"></ngx-datatable>
+</div>
