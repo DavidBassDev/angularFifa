@@ -1,0 +1,22 @@
+<div mat-dialog-content>
+
+
+    <div class="barraTituloCRUD">
+        <h2>{{data.encabezado}}</h2>
+
+    </div>
+    <mat-form-field appearance="fill" style="width:100%;">
+        <mat-label>Nombre</mat-label>
+        <input matInput [(ngModel)]="data.seleccion.nombre">
+    </mat-form-field>
+    <mat-form-field appearance="fill" style="width:100%;">
+        <mat-label>Entidad</mat-label>
+        <input matInput [(ngModel)]="data.seleccion.entidad">
+    </mat-form-field>
+
+</div>
+
+<div mat-dialog-actions>
+    <button mat-raised-button color="primary" [mat-dialog-close]="data.seleccion">Aceptar</button>
+    <button mat-raised-button color="primary" (click)="cerrar()">Cerrar</button>
+</div>

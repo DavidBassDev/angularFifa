@@ -1,4 +1,7 @@
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
+@import '../node_modules/@swimlane/ngx-datatable/themes/material.css';
+@import '../node_modules/@swimlane/ngx-datatable/themes/dark.css';
+@import '../node_modules/@swimlane/ngx-datatable/themes/bootstrap.css';
 
 .centrarTitulo{
     text-align: center; /* Centrar horizontalmente */
@@ -18,3 +21,5 @@
     align-items: center; /* Centrar verticalmente con flexbox */
     width: 100%; /* Ancho completo */
 }
+
+body{ margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
